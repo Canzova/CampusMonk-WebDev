@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Monk</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section style="display: none;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U-pCK9DOmpE?si=_sV9zEMYRQDngRm5"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U-pCK9DOmpE?si=_sV9zEMYRQDngRm5"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    
+    <section class="wrapper">
+        <span class="loader"></span>
+    </section>
+    <section class="content" style="display: none;">
+        <h1>Hello Campus Monk</h1>
+    </section>
+</body>
+<script>
+    const wrapper = document.getElementsByClassName("wrapper");
+    const content = document.getElementsByClassName("content");
+
+    window.addEventListener("load", () => {
+        wrapper[0].style.display = "none";
+        content[0].style.display = "block";
+    })
+</script>
+
+</html>
